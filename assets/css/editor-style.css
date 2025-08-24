@@ -3,6 +3,101 @@
  * https://github.com/WordPress/gutenberg/issues/42319
  */
 a {
-	text-decoration-thickness: 1px !important;
-	text-underline-offset: .1em;
+  text-decoration-thickness: 1px !important;
+  text-underline-offset: 0.1em;
+}
+
+/* 
+ * CUSTOM
+ */
+
+.max-width-1200 {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.top-1rem {
+  margin-top: 1rem;
+}
+
+.top-row {
+  /* display: none !important; */
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.top-row,
+a {
+  text-decoration: none;
+}
+
+.banner-container {
+  display: flex;
+  height: 3rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background-color: #fff;
+  padding: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.banner-container-content {
+  display: flex;
+  gap: 5px;
+}
+
+.close-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  text-align: center;
+  border-radius: 5px;
+  color: black;
+  border: none;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.banner-container-content > div {
+  margin-top: 3px;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.use-app-button {
+  height: 2.25rem;
+  border-radius: 0.5rem;
+  padding: 0 0.75rem;
+  font-weight: 700;
+  background-color: #262626;
+  color: #f4f4f4;
+  border: none;
+  cursor: pointer;
+}
+
+.hide-on-mobile {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .banner-container {
+    display: none;
+  }
+
+  .hide-on-mobile {
+    display: block !important; /* or flex, grid, etc., depending on the block type */
+  }
 }
