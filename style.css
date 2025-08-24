@@ -160,6 +160,10 @@ a {
   display: none;
 }
 
+.hidden {
+  display: none;
+}
+
 @media (min-width: 1200px) {
   .banner-container {
     display: none;
